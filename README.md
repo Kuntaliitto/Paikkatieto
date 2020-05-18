@@ -9,6 +9,8 @@ Asemakaavan kuvaustekniikka (CC BY 4.0)
 
 <img src="testiaineisto_asemakaavan_tyylit.png" width="500"/>
 
+Toteutus Gispo Oy, kevät 2020. 
+
 ### Ohjeet käyttöönottoon
 
 1. Lataa XML-muotoinen tyylikirjasto koneellesi ja avaa QGIS. Kohdasta **Asetukset > Tyylien hallinta** avautuvassa paneelissa voit importoida (tuoda) XML-tyylin QGISiin. Valitse kaikki ja Tuo tiedot. 
