@@ -4,7 +4,7 @@ Paikkatietoon liittyvää materiaalia
 ## Asemakaavan kuvaustekniikka
 
 Asemakaavan kuvaustekniikka (CC BY 4.0)
-- [QGISin tyylitiedosto, xml](asemakaavamerkinnat.xml) (18.5.2020 versio 1.0)
+- [QGISin tyylitiedosto, xml](asemakaavan_kuvaustekniikka.xml) (28.5.2020 versio 1.1)
 - SLD-visualisointikirjasto (tulossa)
 
 <img src="testiaineisto_asemakaavan_tyylit.png" width="500"/>
