@@ -5,8 +5,8 @@ Paikkatietoon liittyvää materiaalia
 
 Asemakaavan kuvaustekniikka (CC BY 4.0). Kuvaustekniikka pohjautuu MRL:n asemakaavan visualisointioppaaseen (Ympäristönministeriö, 2003).
 
-- [QGISin tyylitiedosto, xml](asemakaavan_kuvaustekniikka/asemakaavan_kuvaustekniikka.xml) (16.6.2020 versio 1.1)
-- [SLD-visualisointikirjasto](asemakaavan_kuvaustekniikka/SLD)
+- [QGISin tyylitiedosto, xml](asemakaavan_kuvaustekniikka/asemakaavan_kuvaustekniikka.xml) (28.5.2020 versio 1.1)
+- [SLD-visualisointikirjasto](asemakaavan_kuvaustekniikka/SLD) (16.6.2020 versio 0.1)
 
 <img src="asemakaavan_kuvaustekniikka/testiaineisto_asemakaavan_tyylit.png" width="500"/>
 
