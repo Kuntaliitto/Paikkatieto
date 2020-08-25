@@ -39,28 +39,34 @@ Määrittele haluamallesi kohteille sopivat tyylit. Muista, että kuvaustekniikk
 
 4. Joihikin kohteisiin tarvitaan dataa taustalle, joten voit määrittää ne datan avulla toimimaan oikein. 
 
-### Ohjeet asemakaavan SLD-kuvaustekniikan käyttöönottoon GeoServer-ohjelmistossa
+### Ohjeet  SLD-kuvaustekniikan käyttöönottoon GeoServer-ohjelmistossa
 
-Asemakaavan kuvaustekniikassa on käytetty standardimuotoista SLD-kuvaustekniikkaa, joten sen pitäisi toimia kaikilla kyseistä standardia tukevilla ohjelmistoilla. 
-Kuvaustyylejä on testattu GeoServerillä, ja ohessa on ohjeet tyylien käyttämiseen kyseisellä ohjelmistolla. Vastaavalla tavalla saat aki myös yleiskaavan kuvaustekniikan.
+Asemakaavan ja yleiskaavan kuvaustekniikassa on käytetty standardimuotoista SLD-kuvaustekniikkaa, joten sen pitäisi toimia kaikilla kyseistä standardia tukevilla ohjelmistoilla. Kuvaustyylejä on testattu GeoServerillä, ja ohessa on ohjeet tyylien käyttämiseen kyseisellä ohjelmistolla. Vastaavalla tavalla saat aki myös yleiskaavan kuvaustekniikan.
 
-HUOM! Oletuksena on, että GeoServerille tuotujen tasojen ominaisuustiedoista löytyy sarake **ak_merk**, joka määrittää kaavakohteen tyypin  MRL:n oppaan numeroinnin mukaisesti, 
-ja jonka perusteella kohteiden tyylit määräytyvät. Käytännössä myös osaan kaavakohteista liittyy datasta määräytyviä arvoja (esim. tontin numero, meluvallin desibeliarvo jne.). 
+HUOM! Oletuksena on, että GeoServerille tuotujen tasojen ominaisuustiedoista löytyy asemakaavan osalta sarake **ak_merk** ja yleiskaavan osalta **yk_merk**, joka määrittää kaavakohteen tyypin  MRL:n oppaan numeroinnin mukaisesti, ja jonka perusteella kohteiden tyylit määräytyvät. Käytännössä myös osaan kaavakohteista liittyy datasta määräytyviä arvoja (esim. tontin numero, meluvallin desibeliarvo jne.). 
+
 Yhteinäisten attribuutti-nimitysten puuttuessa, nämä merkinnät on toteutettu oppaan merkintöjä jäljittelevinä esimerkkimerkintöinä, joskin ohjeet datasta määräytyvien arvojen käyttöön löytyvät alla olevasta luvusta.     
 
 1. Lataa asemakaavan kuvaustekniikan sisältävät [SLD-tiedostot](asemakaavan_kuvaustekniikka/SLD) tai [yleiskaavan SLD-tiedostot](yleiskaavan-kuvaustekniikka/SLD)
  tietokoneellesi. 
  
- Asemakaavan tyylitiedostot on jaettu neljään eri tiedostoon kaavakohteen tyypin mukaisesti: 
+a) Asemakaavan tyylitiedostot on jaettu neljään eri tiedostoon kaavakohteen tyypin mukaisesti: 
 
 - kaavayksiköt (MRL:n oppaan merkinnät 1-81), 
 - osa-alueet (merkinnät 113-125, 127-128, 133-134, 136-138, 140-158, 161-162, 166-172, 174-183, 185-189) 
 - viivamaiset kohteet (82-90, 126, 129-132, 135, 139, 159-160)
 - pistemäiset kohteet (91-112, 163-165, 173, 184)
 
-Yleiskaavan tyylitiedostot (ohjeet tulossa)
+b) Yleiskaavan tyylitiedostot on jaettu neljään eri tiedostoon kaavakohteen tyypin mukaisesti:
 
-2. Kirjaudu GeoServerille. Oletuksena on, että visualisoitavat aineistot on jo sinne lisätty. Avaa päävalikon alta **Data**-valikosta kohta **Styles**. Tallenna GeoServerille uusi tyyli painamalla **Add New Style**. Aseta kohdan **Style Data** -kohdan alle perustiedot eli nimi tyylille (**Name**), mihin **Workspaceen** tyyli liitetään sekä varmista että kuvaustekniikan muotona (**format**) on SLD. Lataa koneelle tallentamasi tyylitiedosto kohdasta **Style Content** sekä **Choose File**. Tiedosto valittuasi muista myös painaa valintanapin oikealta puolelta **Upload...** (kts. kuva). **Validate**-napista voi tarkistaa ettei ladattu SLD sisällä virheitä sekä **Layer Preview** -välilehdeltä voi esikatsella tyyliä eri tasoilla. Paina **Submit** tallentaaksesi tyylin.
+-aluevaraukset
+-osa-alueet
+-viivamaiset kohteet
+-pistemäiset kohteet
+
+2. Kirjaudu GeoServerille. Oletuksena on, että visualisoitavat aineistot on jo sinne lisätty.
+
+Avaa päävalikon alta **Data**-valikosta kohta **Styles**. Tallenna GeoServerille uusi tyyli painamalla **Add New Style**. Aseta kohdan **Style Data** -kohdan alle perustiedot eli nimi tyylille (**Name**), mihin **Workspaceen** tyyli liitetään sekä varmista että kuvaustekniikan muotona (**format**) on SLD. Lataa koneelle tallentamasi tyylitiedosto kohdasta **Style Content** sekä **Choose File**. Tiedosto valittuasi muista myös painaa valintanapin oikealta puolelta **Upload...** (kts. kuva). **Validate**-napista voi tarkistaa ettei ladattu SLD sisällä virheitä sekä **Layer Preview** -välilehdeltä voi esikatsella tyyliä eri tasoilla. Paina **Submit** tallentaaksesi tyylin.
 
 3. Ladatun tyylin voi asettaa oletustyyliksi halutulle tasolle **Publishing**-välilehdeltä ja laittamalla kyseiselle tasolle ruksin **Default**-kohtaan. Tämän valinnan voi tehdä myös **Data**-valikosta kohdasta **Layers** ja valitsemalla sieltä halutun tason **Publishing**-välilehdeltä kohdasta **Default Style** ladattu tyyli.
 
