@@ -29,7 +29,7 @@ Vanhoilla versioilla tyyli ei toimi, sillä aiempiin versioihin nähden tyylien 
 Osa tyyleistä vaatii dataa taakseen, kuten esimerkiksi "korttelin numero" tai "rakennuksen julkisivun korkeus". Huomaathan, että tyylikirjasto on pohja, jonka avulla voi kehittää omaa kaavan tyylikirjastoa. 
 Esimerkiksi kaikkia kaavakohteita, joita kunnassa on käytössä, ei välttämättä löydy  MRL:n oppaasta ja siten ei myöskään tästä tyylikirjastosta.
 
-1. Lataa [asemakaavan kuvaustekniikan](asemakaavan_kuvaustekniikka/asemakaavan_kuvaustekniikka.xml) tai [yleiskaavan kuvastenkiikan](yleiskaavan-kuvaustekniikka/yleiskaavan_kuvaustekniikka.xml) sisältävä XML-tiedosto tietokoneellesi ja avaa QGIS. 
+1. Lataa [asemakaavan kuvaustekniikan](asemakaavan_kuvaustekniikka/asemakaavan_kuvaustekniikka.xml) tai [yleiskaavan kuvaustenkiikan](yleiskaavan-kuvaustekniikka/yleiskaavan_kuvaustekniikka.xml) sisältävä XML-tiedosto tietokoneellesi ja avaa QGIS. 
 
 2. Mene **Asetukset > Tyylien hallinta** niin saat auki **Tyylien hallinta -ikkunan**. Klikkaa ikkunan vasemmasta alakulmasta **Tuo/Vie > Import Item(s)** ja valitse tuotavaksi tiedostoksi lataamasi XML-tiedosto. 
 Klikkaa **Valitse kaikki** ja sitten **Tuo** niin saat kuvaustekniikan QGISiin.
@@ -48,13 +48,17 @@ HUOM! Oletuksena on, että GeoServerille tuotujen tasojen ominaisuustiedoista l�
 ja jonka perusteella kohteiden tyylit määräytyvät. Käytännössä myös osaan kaavakohteista liittyy datasta määräytyviä arvoja (esim. tontin numero, meluvallin desibeliarvo jne.). 
 Yhteinäisten attribuutti-nimitysten puuttuessa, nämä merkinnät on toteutettu oppaan merkintöjä jäljittelevinä esimerkkimerkintöinä, joskin ohjeet datasta määräytyvien arvojen käyttöön löytyvät alla olevasta luvusta.     
 
-1. Lataa asemakaavan kuvaustekniikan sisältävät [SLD-tiedostot](asemakaavan_kuvaustekniikka/SLD)
- tietokoneellesi. Tyylitiedostot on jaettu neljään eri tiedostoon kaavakohteen tyypin mukaisesti: 
+1. Lataa asemakaavan kuvaustekniikan sisältävät [SLD-tiedostot](asemakaavan_kuvaustekniikka/SLD) tai [yleiskaavan SLD-tiedostot](yleiskaavan-kuvaustekniikka/SLD)
+ tietokoneellesi. 
+ 
+ Asemakaavan tyylitiedostot on jaettu neljään eri tiedostoon kaavakohteen tyypin mukaisesti: 
 
 - kaavayksiköt (MRL:n oppaan merkinnät 1-81), 
 - osa-alueet (merkinnät 113-125, 127-128, 133-134, 136-138, 140-158, 161-162, 166-172, 174-183, 185-189) 
 - viivamaiset kohteet (82-90, 126, 129-132, 135, 139, 159-160)
 - pistemäiset kohteet (91-112, 163-165, 173, 184)
+
+Yleiskaavan tyylitiedostot (ohjeet tulossa)
 
 2. Kirjaudu GeoServerille. Oletuksena on, että visualisoitavat aineistot on jo sinne lisätty. Avaa päävalikon alta **Data**-valikosta kohta **Styles**. Tallenna GeoServerille uusi tyyli painamalla **Add New Style**. Aseta kohdan **Style Data** -kohdan alle perustiedot eli nimi tyylille (**Name**), mihin **Workspaceen** tyyli liitetään sekä varmista että kuvaustekniikan muotona (**format**) on SLD. Lataa koneelle tallentamasi tyylitiedosto kohdasta **Style Content** sekä **Choose File**. Tiedosto valittuasi muista myös painaa valintanapin oikealta puolelta **Upload...** (kts. kuva). **Validate**-napista voi tarkistaa ettei ladattu SLD sisällä virheitä sekä **Layer Preview** -välilehdeltä voi esikatsella tyyliä eri tasoilla. Paina **Submit** tallentaaksesi tyylin.
 
