@@ -13,14 +13,23 @@ Asemakaavan kuvaustekniikka (CC BY 4.0). Kuvaustekniikka pohjautuu MRL:n asemaka
 
 Toteutus Gispo Oy, kevät 2020. 
 
+## Yleiskaavan kuvaustekniikka
+
+Yleiskaavan kuvaustekniikka (CC BY 4.0). Kuvaustekniikka pohjautuu MRL:n Yleiskaavakaavamerkinnät ja -määräykset-oppaaseen (Ympäristönministeriö, 2003). 
+
+- [XML-muodossa QGISin kuvaustyyli (versio 1.1, 21.8.2020)](yleiskaavan_kuvaustekniikka.xml)
+- [SLD-kuvaustekniikka](SLD)
+
+<img src="yleiskaavan_kuvaustekniikka/yleiskaava.png" width="500"/>
+
 ### Ohjeet XML:n käyttöönottoon QGISissä
 
-HUOM! Kuvaustekniikka on tehty uusimmalla [QGIS-versiolla](https://qgis.org/en/site/forusers/download.html) (3.10 tai uudempi). 
+HUOM! Kuvaustekniikat on tehty uusimmalla [QGIS-versiolla](https://qgis.org/en/site/forusers/download.html) (3.10 tai uudempi). 
 Vanhoilla versioilla tyyli ei toimi, sillä aiempiin versioihin nähden tyylien määrittelyyn tullut huomattavasti muutoksia QGISissä. 
 Osa tyyleistä vaatii dataa taakseen, kuten esimerkiksi "korttelin numero" tai "rakennuksen julkisivun korkeus". Huomaathan, että tyylikirjasto on pohja, jonka avulla voi kehittää omaa kaavan tyylikirjastoa. 
 Esimerkiksi kaikkia kaavakohteita, joita kunnassa on käytössä, ei välttämättä löydy  MRL:n oppaasta ja siten ei myöskään tästä tyylikirjastosta.
 
-1. Lataa [asemakaavan kuvaustekniikan](asemakaavan_kuvaustekniikka/asemakaavan_kuvaustekniikka.xml) sisältävä XML-tiedosto tietokoneellesi ja avaa QGIS. 
+1. Lataa [asemakaavan kuvaustekniikan](asemakaavan_kuvaustekniikka/asemakaavan_kuvaustekniikka.xml) tai [yleiskaavan kuvastenkiikan](yleiskaavan_kuvaustekniikka/yleiskaavan_kuvaustekniikka.xml) sisältävä XML-tiedosto tietokoneellesi ja avaa QGIS. 
 
 2. Mene **Asetukset > Tyylien hallinta** niin saat auki **Tyylien hallinta -ikkunan**. Klikkaa ikkunan vasemmasta alakulmasta **Tuo/Vie > Import Item(s)** ja valitse tuotavaksi tiedostoksi lataamasi XML-tiedosto. 
 Klikkaa **Valitse kaikki** ja sitten **Tuo** niin saat kuvaustekniikan QGISiin.
@@ -30,10 +39,10 @@ Määrittele haluamallesi kohteille sopivat tyylit. Muista, että kuvaustekniikk
 
 4. Joihikin kohteisiin tarvitaan dataa taustalle, joten voit määrittää ne datan avulla toimimaan oikein. 
 
-### Ohjeet SLD-kuvaustekniikan käyttöönottoon GeoServer-ohjelmistossa
+### Ohjeet asemakaavan SLD-kuvaustekniikan käyttöönottoon GeoServer-ohjelmistossa
 
 Asemakaavan kuvaustekniikassa on käytetty standardimuotoista SLD-kuvaustekniikkaa, joten sen pitäisi toimia kaikilla kyseistä standardia tukevilla ohjelmistoilla. 
-Kuvaustyylejä on testattu GeoServerillä, ja ohessa on ohjeet tyylien käyttämiseen kyseisellä ohjelmistolla.
+Kuvaustyylejä on testattu GeoServerillä, ja ohessa on ohjeet tyylien käyttämiseen kyseisellä ohjelmistolla. Vastaavalla tavalla saat aki myös yleiskaavan kuvaustekniikan.
 
 HUOM! Oletuksena on, että GeoServerille tuotujen tasojen ominaisuustiedoista löytyy sarake **ak_merk**, joka määrittää kaavakohteen tyypin  MRL:n oppaan numeroinnin mukaisesti, 
 ja jonka perusteella kohteiden tyylit määräytyvät. Käytännössä myös osaan kaavakohteista liittyy datasta määräytyviä arvoja (esim. tontin numero, meluvallin desibeliarvo jne.). 
