@@ -17,7 +17,7 @@ Toteutus Gispo Oy, kevät 2020.
 
 Yleiskaavan kuvaustekniikka (CC BY 4.0). Kuvaustekniikka pohjautuu MRL:n Yleiskaavakaavamerkinnät ja -määräykset-oppaaseen (Ympäristönministeriö, 2003). 
 
-- [XML-muodossa QGISin kuvaustyyli (versio 1.1, 21.8.2020)](yleiskaavan_kuvaustekniikka.xml)
+- [XML-muodossa QGISin kuvaustyyli (versio 1.2, 25.8.2020)](yleiskaavan_kuvaustekniikka.xml)
 - [SLD-kuvaustekniikka](SLD)
 
 <img src="yleiskaavan-kuvaustekniikka/yleiskaava.png" width="500"/>
